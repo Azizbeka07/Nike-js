@@ -1,0 +1,56 @@
+.page-header {
+  background: #ebffe4;
+
+  &__header-content {
+    @include flexBetween;
+    padding: 54px 0;
+
+    .header-content__header-navbar {
+      display: flex;
+      gap: 30px;
+    }
+
+    .header-wrapper__navbar-link {
+      color: #051101;
+      opacity: 0.6;
+
+      @include mediaMobileFirst(540) {
+        display: none;
+      }
+    }
+    .header-wrapper__navbar-link:hover {
+      opacity: 0.9;
+      transition: 0.5s;
+    }
+    .header-content__btn {
+      padding: 15px 30px;
+      background: #5cbe3a;
+      border-radius: 4px;
+      color: #ffffff;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+
+      @include mediaMobileFirst(540) {
+        display: none;
+      }
+    }
+    .burger-menu {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+
+      @include mediaMobileFirst(540) {
+        display: flex;
+      }
+    }
+    .burger-menu > div {
+      width: 30px;
+      height: 3px;
+      border-radius: 30px;
+      background-color: #5cbe3a;
+    }
+  }
+}

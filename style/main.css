@@ -6,7 +6,7 @@
 @font-face {
   font-family: "Raleway-Bold";
   src: url(./fonts/Raleway-Bold.ttf);
-  font-weight: 700;
+  font-weight: 500;
 }
 @font-face {
   font-family: "Raleway-SemiBold";
@@ -22,7 +22,7 @@
 }
 
 .container {
-  max-width: 1153px;
+  max-width: 1110px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -30,4 +30,63 @@
 
 button {
   border-style: none;
+}
+
+.page-header {
+  background: #ebffe4;
+}
+.page-header__header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 54px 0;
+}
+.page-header__header-content .header-content__header-navbar {
+  display: flex;
+  gap: 30px;
+}
+.page-header__header-content .header-wrapper__navbar-link {
+  color: #051101;
+  opacity: 0.6;
+}
+@media only screen and (max-width: 540px) {
+  .page-header__header-content .header-wrapper__navbar-link {
+    display: none;
+  }
+}
+.page-header__header-content .header-wrapper__navbar-link:hover {
+  opacity: 0.9;
+  transition: 0.5s;
+}
+.page-header__header-content .header-content__btn {
+  padding: 15px 30px;
+  background: #5cbe3a;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+@media only screen and (max-width: 540px) {
+  .page-header__header-content .header-content__btn {
+    display: none;
+  }
+}
+.page-header__header-content .burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 540px) {
+  .page-header__header-content .burger-menu {
+    display: flex;
+  }
+}
+.page-header__header-content .burger-menu > div {
+  width: 30px;
+  height: 3px;
+  border-radius: 30px;
+  background-color: #5cbe3a;
 }/*# sourceMappingURL=main.css.map */
