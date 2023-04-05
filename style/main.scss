@@ -1,12 +1,13 @@
 // General styles
 
-@import "./variables/vriable";
+@import "./variables/normalize.scss";
 @import "./variables/fonts";
 @import "./variables/media-mixin";
 @import "./variables/mixin";
-@import "./variables/normalize.scss";
+@import "./variables/vriable";
 
 //  Components
 
 @import "./components/header-top";
 @import "./components/mobile-menu";
+@import "./components/modal-window";
