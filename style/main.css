@@ -89,4 +89,44 @@ button {
   height: 3px;
   border-radius: 30px;
   background-color: #5cbe3a;
+}
+
+.mobile-menu {
+  max-width: 300px;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 15px;
+  transform: translateX(-300px);
+  transition: 0.5s;
+}
+.mobile-menu__header {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-menu .mobile-menu__close-btn {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+}
+.mobile-menu__nav {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  margin-top: 30px;
+}
+.mobile-menu__link {
+  color: #051101;
+  opacity: 0.6;
+  font-family: "Raleway";
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
 }/*# sourceMappingURL=main.css.map */
