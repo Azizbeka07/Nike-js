@@ -29,7 +29,7 @@ button {
 @font-face {
   font-family: "Raleway-Bold";
   src: url("./fonts/Raleway-Bold.ttf");
-  font-weight: 500;
+  font-weight: 700;
 }
 @font-face {
   font-family: "Raleway-SemiBold";
@@ -156,6 +156,7 @@ button {
   position: absolute;
   top: -450px;
   left: 50%;
+  transform: translateX(-50%);
 }
 @media only screen and (max-width: 500px) {
   .modal-window {
@@ -200,8 +201,7 @@ button {
   }
 }
 .modal-window.open {
-  top: 140px;
-  transform: translateX(-50%);
+  top: 150px;
 }
 .modal-window__text {
   color: #ffffff;
@@ -232,7 +232,8 @@ button {
 
 .header-banner {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 .header-banner__top {
   display: flex;
@@ -240,6 +241,8 @@ button {
   gap: 15px;
 }
 .header-banner__top-text {
+  max-width: 334px;
+  width: 100%;
   font-weight: 600;
   font-size: 22px;
   line-height: 140%;
@@ -253,7 +256,7 @@ button {
 .header-banner__content {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 20px;
 }
 .header-banner__content-title {
   font-weight: 700;
@@ -261,4 +264,88 @@ button {
   line-height: 120%;
   color: #051101;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header-banner__content-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #051101;
+  opacity: 0.7;
+  max-width: 392px;
+  width: 100%;
+}
+.header-banner__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.header-banner__content-item {
+  color: #051101;
+  opacity: 0.7;
+  font-size: 16px;
+  line-height: 150%;
+}
+.header-banner__content-item__span {
+  color: #5cbe3a;
+}
+.header-banner__price-box__text {
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 130%;
+  color: #5cbe3a;
+  margin-top: 15px;
+  display: flex;
+  gap: 30px;
+}
+.header-banner__price-box__span {
+  color: #87d16d;
+}
+.header-banner__box-btn {
+  background: #5cbe3a;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 15px 30px;
+}
+.header-banner__box {
+  display: flex;
+  gap: 30px;
+  margin-top: 37px;
+}
+.header-banner__box-whiteBtn {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 15px 30px;
+  color: #5cbe3a;
+  border: 1px solid #5cbe3a;
+  border-radius: 4px;
+  background: #ebffe4;
+}
+.header-banner__buttom-box {
+  margin-top: 60px;
+  display: flex;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+  text-align: center;
+}
+.header-banner__buttom-70k {
+  font-weight: 700;
+  font-size: 85px;
+  line-height: 120%;
+  color: #5cbe3a;
+}
+.header-banner__buttom-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #051101;
+  opacity: 0.7;
+}
+.header-banner__right-img {
+  max-width: 718px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,7 @@
 .header-banner {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 50px;
 
   &__top {
     display: flex;
@@ -9,6 +10,8 @@
   }
 
   &__top-text {
+    max-width: 334px;
+    width: 100%;
     font-weight: 600;
     font-size: 22px;
     line-height: 140%;
@@ -24,7 +27,7 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 26px;
+    gap: 20px;
   }
 
   &__content-title {
@@ -33,5 +36,101 @@
     line-height: 120%;
     color: #051101;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__content-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #051101;
+    opacity: 0.7;
+    max-width: 392px;
+    width: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__content-item {
+    color: #051101;
+    opacity: 0.7;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__content-item__span {
+    color: #5cbe3a;
+  }
+
+  &__price-box__text {
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 130%;
+    color: #5cbe3a;
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__price-box__span {
+    color: #87d16d;
+  }
+
+  &__box-btn {
+    background: #5cbe3a;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px 30px;
+  }
+
+  &__box {
+    display: flex;
+    gap: 30px;
+    margin-top: 37px;
+  }
+
+  &__box-whiteBtn {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px 30px;
+    color: #5cbe3a;
+    border: 1px solid #5cbe3a;
+    border-radius: 4px;
+    background: #ebffe4;
+  }
+
+  &__buttom-box {
+    margin-top: 60px;
+    display: flex;
+    column-gap: 70px;
+    text-align: center;
+  }
+
+  &__buttom-70k {
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 120%;
+    color: #5cbe3a;
+  }
+
+  &__buttom-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #051101;
+    opacity: 0.7;
+  }
+
+  &__right-img {
+    max-width: 718px;
   }
 }
