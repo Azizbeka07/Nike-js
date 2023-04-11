@@ -1,34 +1,59 @@
 .modal-window {
-  background: $btnColor;
-  border-radius: 20px;
-  padding: 30px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  width: 450px;
-  height: 400px;
-  row-gap: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
   transition: 1s;
-  position: absolute;
-  top: -450px;
-  left: 50%;
-  transform: translateX(-50%);
-  
-  @include mediaMobileFirst(500) {
-    width: 300px;
-    height: 300px;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
   }
 
-  &__link-img {
+
+  &__wrapper {
+    background: $btnColor;
+    border-radius: 20px;
+    padding: 30px 30px;
     display: flex;
-    margin: 0 auto;
-    width: 150px;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    height: 400px;
+    transition: 1s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mediaMobileFirst(500) {
+      max-width: 260px;
+      width: 100%;
+      height: 300px;
+    }
+  }
+
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  &__link-img {
+    width: 120px;
 
     @include mediaMobileFirst(500) {
       width: 90px;
     }
   }
+
 
   &__form-input {
     display: flex;
@@ -41,28 +66,27 @@
     @include mediaMobileFirst(500) {
       font-size: 15px;
     }
-  }
 
-  .input {
-    padding: 15px 15px;
-    width: 390px;
-    height: 50px;
-    border: none;
-    border-radius: 10px;
+    
+    .input {
+      padding: 15px 15px;
+      width: 390px;
+      height: 50px;
+      border: none;
+      border-radius: 10px;
 
-    @include mediaMobileFirst(500) {
-      width: 240px;
-      height: 25px;
+      @include mediaMobileFirst(500) {
+        width: 200px;
+        height: 25px;
+      }
     }
-  }
-
-  &.open {
-    top: 150px;
-   
   }
 
   &__text {
     color: #ffffff;
+  }
+  .hidden {
+    display: none;
   }
 
   &__btn {
@@ -76,16 +100,46 @@
     justify-content: center;
     margin: 0 auto;
     cursor: pointer;
+  }
 
-    @include mediaMobileFirst(500) {
-      width: 60px;
-      height: 30px;
-    }
+  &__close-btn {
+    width: 25px;
+    transition: 0.5s;
+  }
+
+  &__close-btn:hover {
+    width: 30px;
   }
 
   &__item {
     display: flex;
     flex-direction: row-reverse;
+    gap: 50px;
+
+    @include mediaMobileFirst(500) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__btn-google {
+    width: 100px;
+    height: 40px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+  }
+
+  &__img {
+    width: 25px;
+  }
+
+  &__text {
+    color: #5cbe3a;
   }
 }

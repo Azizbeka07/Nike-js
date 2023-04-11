@@ -6,9 +6,9 @@
   top: 0;
   left: 0;
   background-color: #ffffff;
-  border-radius: 15px;
+  border-radius: 0 15px 15px 0;
   transform: translateX(-300px);
-  transition: .5s;
+  transition: 0.5s;
 
   @include mediaMobileFirst(450) {
     max-width: 230px;

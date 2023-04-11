@@ -24,7 +24,7 @@
             <a href="#" class="header-wrapper__navbar-link">About</a>
             <a href="#" class="header-wrapper__navbar-link">Review</a>
           </nav>
-          <button class="header-content__btn">Shpo now</button>
+          <button class="button button-2">Shpo now</button>
           <div class="burger-menu">
             <div></div>
             <div></div>
@@ -33,53 +33,60 @@
         </div>
         <div class="header-banner">
           <div class="header-banner__left">
-            <div class="header-banner__top">
-              <p class="header-banner__top-text">Bring power to your steps.</p>
+            <div class="header-banner__left-top">
+              <p class="header-banner__left-top__text">
+                Bring power to your steps.
+              </p>
               <img
+                class="header-banner__left-top__img"
                 src="./Image/nike logo.png"
-                alt="img"
-                class="header-banner__top-img"
+                alt=""
               />
             </div>
-            <div class="header-banner__content">
-              <h1 class="header-banner__content-title">Walk the line.</h1>
-              <div class="header-banner__wrapper">
-                <p class="header-banner__content-text">
-                  Now that you have a ready strategy to move forward, it’s time to
-                  come up with some ideas.
-                </p>
-                <p class="header-banner__content-item">
-                  Now that you have a
-                  <span class="header-banner__content-item__span"
-                    >ready strategy</span
-                  >
-                  to move forward,
-                </p>
-              </div>
-            </div>
-            <div class="header-banner__price-box">
-              <p class="header-banner__price-box__text">
-                Price : $125
-                <span class="header-banner__price-box__span">$169</span>
+            <h1 class="header-banner__top-title">Walk the line.</h1>
+            <div class="header-banner__left-item">
+              <p class="header-banner__left-text">
+                Now that you have a ready strategy to move forward, it’s time to
+                come up with some ideas.
+              </p>
+              <p class="header-banner__left-top__word">
+                Now that you have a
+                <span class="header-banner__left-top__span"
+                  >ready strategy</span
+                >
+                to move forward,
               </p>
             </div>
-            <div class="header-banner__box">
-              <button class="header-banner__box-btn">Shpo now</button>
-              <button class="header-banner__box-whiteBtn">Learn More</button>
+            <div class="header-banner__left-price__box">
+              <p class="header-banner__left-price">
+                Price : $125
+                <span class="header-banner__left-price__span">$169 </span>
+              </p>
             </div>
-            <div class="header-banner__buttom-box">
-              <div class="header-banner__buttom">
-                <p class="header-banner__buttom-70k">70k</p>
-                <p class="header-banner__buttom-text">CUSTOMERS</p>
+            <div class="header-banner__left-btn__group">
+              <button class="button button-2">Shpo now</button>
+              <button class="btn fourth">Learn More</button>
+            </div>
+            <div class="header-banner__left-customer">
+              <div class="header-banner__left-customer__70k">
+                <p class="header-banner__left-customer__num">70k</p>
+                <p class="header-banner__left-customer__text">CUSTOMERS</p>
               </div>
-              <div class="header-banner__buttom-right">
-                <p class="header-banner__buttom-70k">17k</p>
-                <p class="header-banner__buttom-text">REVIEW</p>
+              <div class="header-banner__left-customer__17k">
+                <p class="header-banner__left-customer__num">17k</p>
+                <p class="header-banner__left-customer__text">REVIEW</p>
               </div>
             </div>
           </div>
           <div class="header-banner__right">
-            <img src="./Image/green footwear.png" alt="img" class="header-banner__right-img">
+            <img
+              src="./Image/green footwear.png"
+              alt="img"
+              class="header-banner__right-img"
+            />
+            <div class="header-banner__right-star">
+              <p class="header-banner__right-star__text">25% OFF</p>
+            </div>
           </div>
         </div>
       </div>
@@ -105,33 +112,40 @@
       </div>
     </div>
     <div class="modal-window">
-      <a href="#" class="modal-window__link">
-        <img class="modal-window__link-img" src="Image/logo.png" alt="img" />
-      </a>
-      <form class="modal-window__form-input">
-        <label for="username">Email:</label>
-        <input
-          class="input"
-          type="text"
-          id="username"
-          placeholder="Email..."
-          name="username"
-        />
-        <label for="pwd">Password:</label>
-        <input
-          class="input"
-          type="password"
-          placeholder="Password..."
-          id="pwd"
-          name="pwd"
-        />
-      </form>
-      <div class="modal-window__item">
-        <button class="modal-window__btn">close</button>
-        <button class="modal-window__btn">send</button>
+      <div class="modal-window__wrapper">
+        <a href="#" class="modal-window__link">
+          <img class="modal-window__link-img" src="Image/logo.png" alt="img" />
+          <img
+            src="./Image/white colse.png"
+            alt="img"
+            class="modal-window__close-btn"
+          />
+        </a>
+        <form class="modal-window__form-input">
+          <label for="username">Email:</label>
+          <input
+            class="input"
+            type="text"
+            id="username"
+            placeholder="Email..."
+            name="username"
+          />
+          <label for="pwd">Password:</label>
+          <input
+            class="input"
+            type="password"
+            placeholder="Password..."
+            id="pwd"
+            name="pwd"
+          />
+        </form>
+        <div class="modal-window__item">
+          <button class="modal-window__btn">Submit</button>
+        </div>
       </div>
     </div>
 
+   
     <script src="./Js/app.js"></script>
   </body>
 </html>

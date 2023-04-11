@@ -13,28 +13,18 @@
     .header-wrapper__navbar-link {
       color: #051101;
       opacity: 0.6;
+      border: 2px solid #ebffe4;
 
       @include mediaMobileFirst(540) {
         display: none;
       }
     }
+
+
     .header-wrapper__navbar-link:hover {
-      opacity: 0.9;
       transition: 0.5s;
-    }
-    .header-content__btn {
-      padding: 15px 30px;
-      background: #5cbe3a;
-      border-radius: 4px;
-      color: #ffffff;
-      cursor: pointer;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 19px;
-
-      @include mediaMobileFirst(540) {
-        display: none;
-      }
+      border-bottom: 2px solid #051101;
+      opacity: 0.9;
     }
 
 
@@ -55,4 +45,38 @@
       background-color: #5cbe3a;
     }
   }
+}
+
+.button {
+  padding: 15px 30px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button-2 {
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: 3px solid #5CBE3A;
+  background-image: -webkit-linear-gradient(30deg, #5CBE3A 50%, transparent 50%);
+  background-image: linear-gradient(30deg, #5CBE3A 50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  transition: background 300ms ease-in-out;
+  transition: 0.8s;
+
+  @include mediaMobileFirst(540) {
+    display: none;
+  }
+}
+.button-2:hover {
+  background-position: 100%;
+  color: #5CBE3A;
 }
