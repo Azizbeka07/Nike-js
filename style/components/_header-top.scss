@@ -1,5 +1,6 @@
 .page-header {
   background: #ebffe4;
+  padding: 0 0 70px 0;
 
   &__header-content {
     @include flexBetween;

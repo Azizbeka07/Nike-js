@@ -38,6 +38,7 @@ button {
 }
 .page-header {
   background: #ebffe4;
+  padding: 0 0 70px 0;
 }
 .page-header__header-content {
   display: flex;
@@ -297,7 +298,6 @@ button {
 
 .header-banner {
   display: flex;
-  margin-top: 50px;
 }
 @media only screen and (max-width: 1160px) {
   .header-banner {
@@ -463,7 +463,7 @@ button {
 }
 .header-banner .header-banner__right-star {
   position: absolute;
-  top: 300px;
+  top: 250px;
   left: auto;
   background-image: url(/Image/Star_1.png);
   background-size: cover;
@@ -491,6 +491,21 @@ button {
   max-width: 718px;
   width: 100%;
 }
+.header-banner__right-crousel {
+  display: flex;
+  gap: 35px;
+  justify-content: end;
+}
+@media only screen and (max-width: 1160px) {
+  .header-banner__right-crousel {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .header-banner__right-crousel {
+    gap: 20px;
+  }
+}
 .header-banner__right-crousel__green {
   width: 115px;
   height: 115px;
@@ -499,9 +514,21 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+@media only screen and (max-width: 450px) {
+  .header-banner__right-crousel__green {
+    width: 60px;
+    height: 60px;
+  }
 }
 .header-banner__right-crousel__green-img {
   width: 90px;
+}
+@media only screen and (max-width: 450px) {
+  .header-banner__right-crousel__green-img {
+    width: 40px;
+  }
 }
 .header-banner__right-crousel__red {
   width: 115px;
@@ -512,6 +539,30 @@ button {
   justify-content: center;
   background: #f5f5f5;
   border: 1px solid #bee761;
+  cursor: pointer;
+}
+@media only screen and (max-width: 450px) {
+  .header-banner__right-crousel__red {
+    width: 60px;
+    height: 60px;
+  }
+}
+.header-banner__right-crousel__black {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  border: 1px solid #bee761;
+  cursor: pointer;
+}
+@media only screen and (max-width: 450px) {
+  .header-banner__right-crousel__black {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .btn {
