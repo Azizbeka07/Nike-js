@@ -94,7 +94,7 @@
     height: 40px;
     background-color: #ffffff;
     border-radius: 10px;
-    color: #5cbe3a;
+    color: $btnColor;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,6 +140,6 @@
   }
 
   &__text {
-    color: #5cbe3a;
+    color: $btnColor;
   }
 }

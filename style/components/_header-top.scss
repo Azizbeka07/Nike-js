@@ -43,7 +43,7 @@
       width: 30px;
       height: 3px;
       border-radius: 30px;
-      background-color: #5cbe3a;
+      background-color: $btnColor;
     }
   }
 }
@@ -60,13 +60,11 @@
 
 .button-2 {
   border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
   color: #fff;
-  border: 3px solid #5CBE3A;
-  background-image: -webkit-linear-gradient(30deg, #5CBE3A 50%, transparent 50%);
-  background-image: linear-gradient(30deg, #5CBE3A 50%, transparent 50%);
+  border: 3px solid $btnColor;
+  background-image: -webkit-linear-gradient(30deg, $btnColor 50%, transparent 50%);
+  background-image: linear-gradient(30deg, $btnColor 50%, transparent 50%);
   background-size: 500px;
   background-repeat: no-repeat;
   background-position: 0%;
@@ -79,5 +77,5 @@
 }
 .button-2:hover {
   background-position: 100%;
-  color: #5CBE3A;
+  color: $btnColor;
 }
