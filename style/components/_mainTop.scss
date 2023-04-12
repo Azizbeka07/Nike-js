@@ -1,0 +1,73 @@
+.page-main {
+  ////////////////////////// CARD SECTION\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+  &__topSection {
+    margin-top: 118px;
+  }
+
+  .page-main__topSection-OurLatestProduct {
+    @include flexCenter;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__topSection-cardItem {
+    background: linear-gradient(
+      360deg,
+      $btnColor -33.55%,
+      rgba(92, 190, 58, 0.0860215) 4.82%,
+      rgba(92, 190, 58, 0) 37.59%
+    );
+    width: 362px;
+    height: 362px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__topSection-card__img {
+    max-width: 292px;
+    height: 161px;
+    margin-top: 151px;
+  }
+
+  &__topSection-text {
+    max-width: 469px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #051101;
+    opacity: 0.7;
+  }
+
+  &__topSection-card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__topSection-card {
+    max-width: 362px;
+    width: 100%;
+    @include flexCenter;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__topSection-card__title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+    color: #000000;
+  }
+
+  &__topSection-card__price {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+  }
+}

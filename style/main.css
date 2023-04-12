@@ -80,7 +80,7 @@ button {
   width: 30px;
   height: 3px;
   border-radius: 30px;
-  background-color: #5cbe3a;
+  background-color: #5CBE3A;
 }
 
 .button {
@@ -96,8 +96,8 @@ button {
 .button-2 {
   border-radius: 4px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   color: #fff;
   border: 3px solid #5CBE3A;
   background-image: linear-gradient(30deg, #5CBE3A 50%, transparent 50%);
@@ -252,7 +252,7 @@ button {
   height: 40px;
   background-color: #ffffff;
   border-radius: 10px;
-  color: #5cbe3a;
+  color: #5CBE3A;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -293,7 +293,7 @@ button {
   width: 25px;
 }
 .modal-window__text {
-  color: #5cbe3a;
+  color: #5CBE3A;
 }
 
 .header-banner {
@@ -303,8 +303,9 @@ button {
   .header-banner {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
   }
 }
@@ -365,7 +366,7 @@ button {
   opacity: 0.7;
 }
 .header-banner__left-top__span {
-  color: #5cbe3a;
+  color: #5CBE3A;
 }
 .header-banner__left-text {
   max-width: 350px;
@@ -394,7 +395,7 @@ button {
   font-weight: 700;
   font-size: 31px;
   line-height: 130%;
-  color: #5cbe3a;
+  color: #5CBE3A;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -442,7 +443,7 @@ button {
   font-weight: 700;
   font-size: 85px;
   line-height: 120%;
-  color: #5cbe3a;
+  color: #5CBE3A;
 }
 @media only screen and (max-width: 1160px) {
   .header-banner__left-customer__num {
@@ -577,8 +578,8 @@ button {
 
 .fourth {
   border: 1px solid rgba(92, 190, 58, 0.3);
-  color: #5cbe3a;
-  background-image: linear-gradient(45deg, #5cbe3a 50%, transparent 50%);
+  color: #5CBE3A;
+  background-image: linear-gradient(45deg, #5CBE3A 50%, transparent 50%);
   background-position: 100%;
   background-size: 400%;
   transition: 1s;
@@ -587,4 +588,65 @@ button {
 .fourth:hover {
   color: #fff;
   background-position: 0;
+}
+
+.page-main__topSection {
+  margin-top: 118px;
+}
+.page-main .page-main__topSection-OurLatestProduct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.page-main__topSection-cardItem {
+  background: linear-gradient(360deg, #5CBE3A -33.55%, rgba(92, 190, 58, 0.0860215) 4.82%, rgba(92, 190, 58, 0) 37.59%);
+  width: 362px;
+  height: 362px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+.page-main__topSection-card__img {
+  max-width: 292px;
+  height: 161px;
+  margin-top: 151px;
+}
+.page-main__topSection-text {
+  max-width: 469px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #051101;
+  opacity: 0.7;
+}
+.page-main__topSection-card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.page-main__topSection-card {
+  max-width: 362px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.page-main__topSection-card__title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+  color: #000000;
+}
+.page-main__topSection-card__price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
 }/*# sourceMappingURL=main.css.map */
