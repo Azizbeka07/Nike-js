@@ -465,7 +465,7 @@ button {
   position: absolute;
   top: 300px;
   left: auto;
-  background-image: url(/Image/Star\ 1.png);
+  background-image: url(/Image/Star_1.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 170px;
@@ -490,6 +490,28 @@ button {
 .header-banner__right-img {
   max-width: 718px;
   width: 100%;
+}
+.header-banner__right-crousel__green {
+  width: 115px;
+  height: 115px;
+  background: #b6e247;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-banner__right-crousel__green-img {
+  width: 90px;
+}
+.header-banner__right-crousel__red {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  border: 1px solid #bee761;
 }
 
 .btn {

@@ -19,8 +19,10 @@ closeBtn.addEventListener("click", () => {
 // modal window open
 shpoNow.addEventListener("click", () => {
   modalWindow.classList.add("open");
+  document.body.style.overflow = "hidden";
 });
 
 modalClose.addEventListener("click", () => {
   modalWindow.classList.remove("open");
+  document.body.style.overflow = "scroll"
 });
