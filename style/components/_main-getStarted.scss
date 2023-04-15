@@ -1,0 +1,43 @@
+.page-main {
+  &__getStarted-wrapper {
+    width: 100%;
+    padding: 84px 15px;
+    @include flexCenter;
+    flex-direction: column;
+    gap: 30px;
+    background: #ebffe4;
+    margin-top: 105px;
+
+    @include mediaMobileFirst(400) {
+        padding: 54px 15px;
+    }
+  }
+
+  &__getstarted-wrapper__title {
+    @include titleStyle;
+    font-family: "Raleway-Bold";
+
+    @include mediaMobileFirst(400) {
+        font-size: 34px;
+    }
+  }
+
+  &__getStarted-wrapper__text {
+    @include textStyle;
+    font-family: "Raleway-Regular";
+    max-width: 392px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__getStarted-wrapper__btn {
+    padding: 15px 30px;
+    background-color: $btnColor;
+    color: #ffffff;
+    font-family: "Raleway-Regular";
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    border-radius: 4px;
+  }
+}

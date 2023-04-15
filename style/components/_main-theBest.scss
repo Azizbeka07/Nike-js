@@ -1,0 +1,61 @@
+.page-main {
+  &__theBest {
+    margin-top: 130px;
+
+    @include mediaMobileFirst(430) {
+        margin-top: 60px;
+    }
+
+    @include mediaMobileFirst(350) {
+        margin-top: 30px;
+    }
+  }
+
+  &__theBest-img {
+    max-width: 656px;
+    width: 100%;
+  }
+
+  &__theBest-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+
+    @include mediaMobileFirst(1110) {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    @include mediaMobileFirst(670) {
+      text-align: center;
+    }
+  }
+
+  &__theBest-right__title {
+    @include titleStyle;
+    font-family: "Raleway-Bold";
+
+    @include mediaMobileFirst(360) {
+        font-size: 34px;
+    }
+  }
+
+  &__theBest-right__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 25px;
+    font-family: "Raleway-Regular";
+
+    @include mediaMobileFirst(670) {
+        text-align: center;
+        justify-content: center;
+      }
+  }
+
+  &__theBest-right__item-text {
+    max-width: 392px;
+    width: 100%;
+  }
+}

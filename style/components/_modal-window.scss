@@ -60,6 +60,7 @@
     flex-direction: column;
     row-gap: 10px;
     color: #ffffff;
+    font-family: "Raleway-Regular";
     font-size: 20px;
     text-align: left;
 
@@ -84,6 +85,7 @@
 
   &__text {
     color: #ffffff;
+    font-family: "Raleway-Regular";
   }
   .hidden {
     display: none;
@@ -141,5 +143,6 @@
 
   &__text {
     color: $btnColor;
+    font-family: "Raleway-Regular";
   }
 }

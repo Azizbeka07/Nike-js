@@ -15,6 +15,7 @@
   }
 
   &__left-top__text {
+    font-family: "Raleway-Semibold";
     color: $btnColor;
     font-weight: 600;
     font-size: 22px;
@@ -33,6 +34,7 @@
   }
 
   &__top-title {
+    font-family: "Raleway-Bold";
     font-weight: 700;
     font-size: 61px;
     line-height: 120%;
@@ -58,6 +60,7 @@
   &__left-top__word {
     max-width: 425.48px;
     width: 100%;
+    font-family: "Raleway-Regular";
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -72,6 +75,7 @@
   &__left-text {
     max-width: 350px;
     width: 100%;
+    font-family: "Raleway-Regular";
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -93,6 +97,7 @@
   }
 
   &__left-price {
+    font-family: "Raleway-Bold";
     font-weight: 700;
     font-size: 31px;
     line-height: 130%;
@@ -108,6 +113,7 @@
   }
 
   &__left-price__span {
+    font-family: "Raleway-Bold";
     font-size: 22px;
     line-height: 130%;
     color: #87d16d;
@@ -143,6 +149,7 @@
   }
 
   &__left-customer__num {
+    font-family: "Raleway-Bold";
     font-weight: 700;
     font-size: 85px;
     line-height: 120%;
@@ -158,8 +165,10 @@
   }
 
   &__left-customer__text {
+    font-family: "Raleway-Regular";
     font-weight: 500;
     font-size: 16px;
+    font-family: "Raleway-Regular";
     line-height: 150%;
     color: #051101;
     opacity: 0.7;
@@ -182,6 +191,7 @@
   }
 
   &__right-star__text {
+    font-family: "Raleway-Bold";
     font-weight: 600;
     font-size: 37px;
     line-height: 150%;
@@ -270,6 +280,7 @@
   border-radius: 4px;
   cursor: pointer;
   display: flex;
+  font-family: "Raleway-Regular";
   font-size: 16px;
   padding: 15px 30px;
   text-transform: uppercase;

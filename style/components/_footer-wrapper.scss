@@ -1,0 +1,107 @@
+.page-footer {
+  margin-top: 135px;
+  border-top: 1px solid rgb(227, 227, 227);
+  border-bottom: 34px solid $btnColor;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 44px;
+
+    @include mediaMobileFirst(576) {
+        flex-direction: column;
+        gap: 30px;
+    }
+  }
+
+  &__wrapper-navbar {
+    display: flex;
+    gap: 59px;
+
+    @include mediaMobileFirst(930) {
+      gap: 50px;
+    }
+
+    @include mediaMobileFirst(820) {
+      gap: 40px;
+    }
+
+    @include mediaMobileFirst(770) {
+      gap: 30px;
+    }
+
+    @include mediaMobileFirst(740) {
+      gap: 20px;
+    }
+  }
+
+  &__wrapper-navbar__link {
+    font-family: "Raleway-Regular";
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+    color: #051101;
+
+    @include mediaMobileFirst(930) {
+      font-size: 17px;
+    }
+
+    @include mediaMobileFirst(640) {
+        font-size: 13px;
+    }
+  }
+
+  &__wrapper-followUs {
+    display: flex;
+    gap: 25px;
+
+
+    @include mediaMobileFirst(690) {
+      gap: 15px;
+    }
+  }
+
+  &__wrapper-followUs__facebook-btn {
+    background-color: $btnColor;
+    width: 47px;
+    height: 47px;
+    @include flexCenter;
+    border-radius: 50%;
+
+    @include mediaMobileFirst(690) {
+      width: 37px;
+      height: 37px;
+    }
+  }
+
+  &__wrapper-followUs__facebooks-btn {
+    background-color: $btnColor;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    @include flexCenter;
+
+    @include mediaMobileFirst(690) {
+      width: 37px;
+      height: 37px;
+    }
+  }
+
+  &__wrapper-followUs__btn {
+    background-color: transparent;
+    font-family: "Raleway-Bold";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    color: #051101;
+
+    @include mediaMobileFirst(730) {
+      font-size: 17px;
+    }
+
+    @include mediaMobileFirst(600) {
+        font-size: 15px;
+    }
+  }
+}

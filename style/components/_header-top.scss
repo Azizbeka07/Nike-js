@@ -15,19 +15,18 @@
       color: #051101;
       opacity: 0.6;
       border: 2px solid #ebffe4;
+      font-family: "Raleway-Regular";
 
       @include mediaMobileFirst(540) {
         display: none;
       }
     }
 
-
     .header-wrapper__navbar-link:hover {
       transition: 0.5s;
       border-bottom: 2px solid #051101;
       opacity: 0.9;
     }
-
 
     .burger-menu {
       display: none;
@@ -62,8 +61,13 @@
   border-radius: 4px;
   @include flexCenter;
   color: #fff;
+   font-family: "Raleway-Regular";
   border: 3px solid $btnColor;
-  background-image: -webkit-linear-gradient(30deg, $btnColor 50%, transparent 50%);
+  background-image: -webkit-linear-gradient(
+    30deg,
+    $btnColor 50%,
+    transparent 50%
+  );
   background-image: linear-gradient(30deg, $btnColor 50%, transparent 50%);
   background-size: 500px;
   background-repeat: no-repeat;
