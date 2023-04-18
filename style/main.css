@@ -303,6 +303,7 @@ button {
 
 .header-banner {
   display: flex;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 1160px) {
   .header-banner {
@@ -507,78 +508,65 @@ button {
   max-width: 718px;
   width: 100%;
 }
-.header-banner__right-crousel {
+.header-banner .swiper {
+  width: 100%;
+  height: 100%;
+}
+.header-banner .swiper-slide {
+  text-align: center;
+  font-size: 18px;
   display: flex;
-  gap: 35px;
-  justify-content: end;
-}
-@media only screen and (max-width: 1160px) {
-  .header-banner__right-crousel {
-    justify-content: center;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .header-banner__right-crousel {
-    gap: 20px;
-  }
-}
-.header-banner__right-crousel__green {
-  width: 115px;
-  height: 115px;
-  background: #b6e247;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  cursor: pointer;
-}
-@media only screen and (max-width: 450px) {
-  .header-banner__right-crousel__green {
-    width: 60px;
-    height: 60px;
-  }
-}
-.header-banner__right-crousel__green-img {
-  width: 90px;
-}
-@media only screen and (max-width: 450px) {
-  .header-banner__right-crousel__green-img {
-    width: 40px;
-  }
-}
-.header-banner__right-crousel__red {
-  width: 115px;
-  height: 115px;
-  border-radius: 50%;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  background: #f5f5f5;
-  border: 1px solid #bee761;
-  cursor: pointer;
 }
-@media only screen and (max-width: 450px) {
-  .header-banner__right-crousel__red {
-    width: 60px;
-    height: 60px;
-  }
+.header-banner .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.header-banner__right-crousel__black {
-  width: 115px;
-  height: 115px;
+.header-banner .swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-banner .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+.header-banner .mySwiper2 {
+  height: 372px;
+  width: 718px;
+}
+.header-banner .mySwiper {
+  width: 500px;
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+  transform: translateX(200px);
+}
+.header-banner .mySwiper .swiper-slide {
+  opacity: 0.4;
+  width: 110px;
+  height: 110px;
+  margin-right: 10px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f5f5f5;
-  border: 1px solid #bee761;
-  cursor: pointer;
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-@media only screen and (max-width: 450px) {
-  .header-banner__right-crousel__black {
-    width: 60px;
-    height: 60px;
-  }
+.header-banner .mySwiper .swiper-slide-thumb-active {
+  background: #B6E247;
+  opacity: 2;
+}
+.header-banner .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .btn {
@@ -755,7 +743,7 @@ button {
   color: #e5f2e1;
   top: 0;
   bottom: 0;
-  left: -25%;
+  left: -22%;
   z-index: -1;
   transform: rotate(-90deg);
 }

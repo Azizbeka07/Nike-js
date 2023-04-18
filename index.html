@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <title>Nike</title>
   </head>
   <body>
@@ -84,35 +88,36 @@
             </div>
           </div>
           <div class="header-banner__right">
-            <img
-              src="./image/green_footwear.png"
-              alt="img"
-              class="header-banner__right-img"
-            />
-            <div class="header-banner__right-star">
-              <p class="header-banner__right-star__text">25% OFF</p>
+            <div
+              style="
+                --swiper-navigation-color: #000;
+                --swiper-pagination-color: #fff;
+              "
+              class="swiper mySwiper2"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./image/green_footwear.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/red.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/black.png" />
+                </div>
+              </div>
             </div>
-            <div class="header-banner__right-crousel">
-              <div class="header-banner__right-crousel__green">
-                <img
-                  src="./image/Ellipse_10.png"
-                  alt="img"
-                  class="header-banner__right-crousel__green-img"
-                />
-              </div>
-              <div class="header-banner__right-crousel__red">
-                <img
-                  src="./image/red_footwear.png"
-                  alt="img"
-                  class="header-banner__right-crousel__green-img"
-                />
-              </div>
-              <div class="header-banner__right-crousel__black">
-                <img
-                  src="./image/black_footwear.png"
-                  alt="img"
-                  class="header-banner__right-crousel__green-img"
-                />
+            <div thumbsSlider="" class="swiper mySwiper">
+              <div class="swiper-wrapper slider-box">
+                <div class="swiper-slide">
+                  <img src="./image/green.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-slide__img" src="./image/red.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-slide__img" src="./image/black.png" />
+                </div>
               </div>
             </div>
           </div>
@@ -305,21 +310,34 @@
             <a href="#" class="page-footer__wrapper-navbar__link">Review</a>
           </nav>
           <div class="page-footer__wrapper-followUs">
-            <button class="page-footer__wrapper-followUs__btn">Follow Us :</button>
+            <button class="page-footer__wrapper-followUs__btn">
+              Follow Us :
+            </button>
             <button class="page-footer__wrapper-followUs__facebooks-btn">
-              <img src="./image/facebook.png" alt="img" class="page-footer__wrapper-followUs__facebook-btn__img">
+              <img
+                src="./image/facebook.png"
+                alt="img"
+                class="page-footer__wrapper-followUs__facebook-btn__img"
+              />
             </button>
             <button class="page-footer__wrapper-followUs__facebook-btn">
-              <img src="./image/twitter.png" alt="img" class="page-footer__wrapper-followUs__facebook-btn__img">
+              <img
+                src="./image/twitter.png"
+                alt="img"
+                class="page-footer__wrapper-followUs__facebook-btn__img"
+              />
             </button>
             <button class="page-footer__wrapper-followUs__facebook-btn">
-              <img src="./image/instagram.png" alt="img" class="page-footer__wrapper-followUs__facebook-btn__img">
+              <img
+                src="./image/instagram.png"
+                alt="img"
+                class="page-footer__wrapper-followUs__facebook-btn__img"
+              />
             </button>
           </div>
         </div>
       </div>
     </footer>
-
     <!-- // mobile menu -->
     <div class="mobile-menu">
       <div class="mobile-menu__header">
@@ -376,7 +394,7 @@
         </div>
       </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

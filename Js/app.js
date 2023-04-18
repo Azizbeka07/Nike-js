@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 // burger menu and modal window
 const menu = document.querySelector(".burger-menu");
 const mobileMenu = document.querySelector(".mobile-menu");
@@ -25,4 +25,19 @@ shpoNow.addEventListener("click", () => {
 modalClose.addEventListener("click", () => {
   modalWindow.classList.remove("open");
   document.body.style.overflow = "scroll"
+});
+
+// header banner right carousel
+
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: swiper,
+  },
 });
