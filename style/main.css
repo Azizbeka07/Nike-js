@@ -175,6 +175,7 @@ button {
   opacity: 0;
   visibility: hidden;
   transition: 1s;
+  z-index: 1;
 }
 .modal-window.open {
   opacity: 1;
@@ -266,9 +267,6 @@ button {
 .modal-window__close-btn {
   width: 25px;
   transition: 0.5s;
-}
-.modal-window__close-btn:hover {
-  width: 30px;
 }
 .modal-window__item {
   display: flex;
@@ -542,7 +540,7 @@ button {
 }
 .header-banner .mySwiper {
   width: 500px;
-  height: 20%;
+  height: 25%;
   box-sizing: border-box;
   padding: 10px 0;
   transform: translateX(200px);
@@ -743,7 +741,7 @@ button {
   color: #e5f2e1;
   top: 0;
   bottom: 0;
-  left: -22%;
+  left: -25%;
   z-index: -1;
   transform: rotate(-90deg);
 }
