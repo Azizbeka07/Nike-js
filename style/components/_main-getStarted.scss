@@ -39,5 +39,13 @@
     line-height: 19px;
     text-transform: uppercase;
     border-radius: 4px;
+    border: 2px solid transparent;
+    transition: .5s;
+  }
+
+  &__getStarted-wrapper__btn:hover {
+    background-color: transparent;
+    border: 2px solid $btnColor;
+    color: $btnColor;
   }
 }

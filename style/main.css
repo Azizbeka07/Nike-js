@@ -118,6 +118,19 @@ button {
 .button-2:hover {
   background-position: 100%;
   color: #5CBE3A;
+  background-color: transparent;
+}
+
+.header {
+  overflow: hidden;
+}
+
+.header-item {
+  transition: 1s;
+}
+
+.header-item:nth-child(1) {
+  transform: translateY(-200px);
 }
 
 .mobile-menu {
@@ -362,6 +375,15 @@ button {
   flex-direction: column;
   gap: 10px;
 }
+.header-banner .wrapper-item:nth-child(1) {
+  transform: translateX(-900px);
+}
+.header-banner .wrapper-item:nth-child(2) {
+  transform: translateX(900px);
+}
+.header-banner .wrapper-item {
+  transition: 1s;
+}
 .header-banner__left-top__word {
   max-width: 425.48px;
   width: 100%;
@@ -477,7 +499,7 @@ button {
 }
 .header-banner .header-banner__right-star {
   position: absolute;
-  top: 250px;
+  top: 50px;
   left: auto;
   background-image: url(/Image/Star_1.png);
   background-size: cover;
@@ -534,6 +556,15 @@ button {
   background-size: cover;
   background-position: center;
 }
+.header-banner .swiper-slide__img {
+  max-width: 718px;
+  width: 100%;
+}
+@media only screen and (max-width: 720px) {
+  .header-banner .swiper-slide__img {
+    max-width: 518px;
+  }
+}
 .header-banner .mySwiper2 {
   height: 372px;
   width: 718px;
@@ -543,7 +574,6 @@ button {
   height: 25%;
   box-sizing: border-box;
   padding: 10px 0;
-  transform: translateX(200px);
 }
 .header-banner .mySwiper .swiper-slide {
   opacity: 0.4;
@@ -590,6 +620,10 @@ button {
 .fourth:hover {
   color: #fff;
   background-position: 0;
+}
+
+.wrapper {
+  overflow: hidden;
 }
 
 .page-main__topSection {
@@ -709,6 +743,26 @@ button {
   color: #000000;
 }
 
+.content {
+  overflow: hidden;
+}
+
+.content-item {
+  transition: 1s;
+}
+
+.content-item:nth-child(1) {
+  transform: translateX(-400px);
+}
+
+.content-item:nth-child(2) {
+  transform: translatey(-600px);
+}
+
+.content-item:nth-child(3) {
+  transform: translateX(400px);
+}
+
 .page-main__viewSection__wrapper {
   display: flex;
   align-items: center;
@@ -731,7 +785,7 @@ button {
   position: relative;
 }
 .page-main__viewSection-wrapper__left::before {
-  content: "VIEW";
+  content: "View";
   position: absolute;
   font-weight: 700;
   font-family: "Raleway-Bold";
@@ -741,7 +795,7 @@ button {
   color: #e5f2e1;
   top: 0;
   bottom: 0;
-  left: -25%;
+  left: -18%;
   z-index: -1;
   transform: rotate(-90deg);
 }
@@ -960,6 +1014,13 @@ button {
   line-height: 19px;
   text-transform: uppercase;
   border-radius: 4px;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+.page-main__getStarted-wrapper__btn:hover {
+  background-color: transparent;
+  border: 2px solid #5CBE3A;
+  color: #5CBE3A;
 }
 
 .page-footer {

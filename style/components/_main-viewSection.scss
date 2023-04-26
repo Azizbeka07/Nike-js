@@ -23,7 +23,7 @@
     position: relative;
 
     &::before {
-      content: "VIEW";
+      content: "View";
       position: absolute;
       font-weight: 700;
       font-family: "Raleway-Bold";
@@ -33,7 +33,7 @@
       color: #e5f2e1;
       top: 0;
       bottom: 0;
-      left: -25%;
+      left: -18%;
       z-index: -1;
       transform: rotate(-90deg);
 

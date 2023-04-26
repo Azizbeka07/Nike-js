@@ -17,7 +17,7 @@
       <div class="container">
         <!--header content -->
 
-        <div class="page-header__header-content">
+        <div class="header"><div class="page-header__header-content header-item">
           <a href="#" class="header-content__link">
             <img
               src="./image/logo.png"
@@ -40,8 +40,8 @@
         </div>
         <!-- header banner -->
 
-        <div class="header-banner">
-          <div class="header-banner__left">
+        <div class="header-banner wrapper">
+          <div class="header-banner__left wrapper-item">
             <div class="header-banner__left-top">
               <p class="header-banner__left-top__text">
                 Bring power to your steps.
@@ -77,17 +77,25 @@
               <button class="btn fourth">Learn More</button>
             </div>
             <div class="header-banner__left-customer">
-              <div class="header-banner__left-customer__70k">
-                <p class="header-banner__left-customer__num">70k</p>
+              <div class="header-banner__left-customer__70k item">
+               <div>
+                <div class="header-banner__left-customer__num timer" count="70"></div>
+                <span>k</span>
+               </div>
                 <p class="header-banner__left-customer__text">CUSTOMERS</p>
               </div>
               <div class="header-banner__left-customer__17k">
-                <p class="header-banner__left-customer__num">17k</p>
+                <div class="header-banner__left-customer__num timer" count="17">
+                  k
+                </div>
                 <p class="header-banner__left-customer__text">REVIEW</p>
               </div>
             </div>
           </div>
-          <div class="header-banner__right">
+          <div class="header-banner__right wrapper-item">
+            <div class="header-banner__right-star">
+              <p class="header-banner__right-star__text">25% OFF</p>
+            </div>
             <div
               style="
                 --swiper-navigation-color: #000;
@@ -97,13 +105,13 @@
             >
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="./image/green_footwear.png" />
+                  <img class="slider-img" src="./image/green_footwear.png" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./image/red.png" />
+                  <img class="slider-img" src="./image/red.png" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./image/black.png" />
+                  <img class="slider-img" src="./image/black.png" />
                 </div>
               </div>
             </div>
@@ -113,7 +121,7 @@
                   <img src="./image/green.png" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-slide__img" src="./image/red.png" />
+                  <img src="./image/red.png" />
                 </div>
                 <div class="swiper-slide">
                   <img class="swiper-slide__img" src="./image/black.png" />
@@ -136,8 +144,8 @@
               come up with some ideas.
             </p>
           </div>
-          <div class="page-main__topSection-card__wrapper">
-            <div class="page-main__topSection-card">
+          <div class="page-main__topSection-card__wrapper content">
+            <div class="page-main__topSection-card content-item">
               <div class="page-main__topSection-cardItem">
                 <img
                   src="./image/blueSneck.png"
@@ -154,7 +162,7 @@
               <p class="page-main__topSection-card__price">$75.00 – $85.00</p>
               <button class="btn fourth">Shop now</button>
             </div>
-            <div class="page-main__topSection-card">
+            <div class="page-main__topSection-card content-item">
               <div class="page-main__topSection-cardItem">
                 <img
                   src="./image/blackSnack.png"
@@ -171,7 +179,7 @@
               <p class="page-main__topSection-card__price">$65.00 – $75.00</p>
               <button class="btn fourth">Shop now</button>
             </div>
-            <div class="page-main__topSection-card">
+            <div class="page-main__topSection-card content-item">
               <div class="page-main__topSection-cardItem">
                 <img
                   src="./image/redSneck.png"
@@ -360,7 +368,7 @@
         </nav>
       </div>
     </div>
-    
+
     <!-- // modal window -->
     <div class="modal-window">
       <div class="modal-window__wrapper">

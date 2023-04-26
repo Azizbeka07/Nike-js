@@ -58,6 +58,18 @@
     gap: 10px;
   }
 
+  .wrapper-item:nth-child(1) {
+    transform: translateX(-900px);
+  }
+
+  .wrapper-item:nth-child(2) {
+    transform: translateX(900px);
+  }
+
+  .wrapper-item {
+    transition: 1s;
+  }
+
   &__left-top__word {
     max-width: 425.48px;
     width: 100%;
@@ -177,7 +189,7 @@
 
   .header-banner__right-star {
     position: absolute;
-    top: 250px;
+    top: 50px;
     left: auto;
     background-image: url(/Image/Star\_1.png);
     background-size: cover;
@@ -239,6 +251,15 @@
     background-position: center;
   }
 
+  .swiper-slide__img {
+    max-width: 718px;
+    width: 100%;
+
+    @include mediaMobileFirst(720) {
+      max-width: 518px;
+    }
+  }
+
   .mySwiper2 {
     height: 372px;
     width: 718px;
@@ -249,7 +270,6 @@
     height: 25%;
     box-sizing: border-box;
     padding: 10px 0;
-    transform: translateX(200px);
   }
 
 
@@ -305,4 +325,9 @@
 .fourth:hover {
   color: #fff;
   background-position: 0;
+}
+
+
+.wrapper {
+  overflow: hidden;
 }
