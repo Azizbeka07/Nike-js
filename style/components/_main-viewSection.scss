@@ -22,26 +22,6 @@
     gap: 23px;
     position: relative;
 
-    &::before {
-      content: "View";
-      position: absolute;
-      font-weight: 700;
-      font-family: "Raleway-Bold";
-      font-size: 150.216px;
-      line-height: 130%;
-      text-align: center;
-      color: #e5f2e1;
-      top: 0;
-      bottom: 0;
-      left: -18%;
-      z-index: -1;
-      transform: rotate(-90deg);
-
-      @include mediaMobileFirst(835) {
-        z-index: +2;
-        left: -15%;
-        font-size: 100px;
-      }
 
       @include mediaMobileFirst(400) {
         font-size: 70px;
@@ -58,7 +38,6 @@
       max-width: 420px;
       padding: 50px;
     }
-  }
 
   &__viewSection-wrapper__left-title {
     @include titleStyle;
@@ -121,4 +100,20 @@
       height: 30px;
     }
   }
+}
+
+.viewSection {
+  overflow: hidden;
+}
+
+.viewSection-item {
+  transition: 1s;
+}
+
+.viewSection-item:nth-child(1) {
+  transform: translateX(-620px);
+}
+
+.viewSection-item:nth-child(2) {
+  transform: translateX(620px);
 }

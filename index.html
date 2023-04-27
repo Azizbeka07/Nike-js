@@ -11,6 +11,7 @@
     />
     <title>Nike</title>
   </head>
+
   <body>
     <!-- HEADER -->
     <header class="page-header">
@@ -78,16 +79,17 @@
             </div>
             <div class="header-banner__left-customer">
               <div class="header-banner__left-customer__70k item">
-               <div>
+               <div class="header-banner__left-customer__span-box">
                 <div class="header-banner__left-customer__num timer" count="70"></div>
-                <span>k</span>
+                <span class="header-banner__left-cutomer__span">k</span>
                </div>
                 <p class="header-banner__left-customer__text">CUSTOMERS</p>
               </div>
               <div class="header-banner__left-customer__17k">
-                <div class="header-banner__left-customer__num timer" count="17">
-                  k
-                </div>
+                <div class="header-banner__left-customer__span-box">
+                <div class="header-banner__left-customer__num timer" count="17"></div>
+                <span class="header-banner__left-cutomer__span">k</span>
+              </div>
                 <p class="header-banner__left-customer__text">REVIEW</p>
               </div>
             </div>
@@ -132,6 +134,7 @@
         </div>
       </div>
     </header>
+
     <!-- MAIN -->
 
     <main class="page-main">
@@ -201,8 +204,8 @@
       </section>
       <section class="page-main__viewSection">
         <div class="container">
-          <div class="page-main__viewSection__wrapper">
-            <div class="page-main__viewSection-wrapper__left">
+          <div class="page-main__viewSection__wrapper viewSection">
+            <div class="page-main__viewSection-wrapper__left viewSection-item">
               <h2 class="page-main__viewSection-wrapper__left-title">
                 Telling your story with videos
               </h2>
@@ -211,7 +214,7 @@
                 come up with some ideas.
               </p>
             </div>
-            <div class="page-main__viewSection-wrapper__right">
+            <div class="page-main__viewSection-wrapper__right viewSection-item">
               <a
                 href="https://www.youtube.com/watch?v=QNgkSbpwupM"
                 class="page-main__viewSection-wrapper__right-play"
@@ -227,13 +230,13 @@
       </section>
       <section class="page-main__theBest">
         <div class="container">
-          <div class="page-main__theBest-wrapper">
+          <div class="page-main__theBest-wrapper theBest">
             <img
               src="./image/man.png"
               alt="img"
-              class="page-main__theBest-img"
+              class="page-main__theBest-img theBest-item"
             />
-            <div class="page-main__theBest-right">
+            <div class="page-main__theBest-right theBest-item">
               <p class="page-main__theBest-right__title">
                 The best shoes for the best people.
               </p>
@@ -285,9 +288,9 @@
           </div>
         </div>
       </section>
-      <section class="page-main__getStarted">
+      <section class="page-main__getStarted getStarted">
         <div class="container">
-          <div class="page-main__getStarted-wrapper">
+          <div class="page-main__getStarted-wrapper getStarted-item">
             <p class="page-main__getstarted-wrapper__title">Get Started Now</p>
             <p class="page-main__getStarted-wrapper__text">
               Now that you have a ready strategy to move forward, it’s time to
@@ -403,6 +406,10 @@
         </div>
       </div>
     </div>
+    <div class="loader">
+      <div class="lds-roller"><div></div><div></div><div></div><div></div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
   </body>

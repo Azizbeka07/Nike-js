@@ -59,3 +59,19 @@
     width: 100%;
   }
 }
+
+.theBest {
+  overflow: hidden;
+}
+
+.theBest-item {
+  transition: 1s;
+}
+
+.theBest-item:nth-child(1) {
+  transform: translateX(1160px);
+}
+
+.theBest-item:nth-child(2) {
+  transform: translateX(-1160px);
+}
