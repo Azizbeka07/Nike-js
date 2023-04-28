@@ -699,6 +699,8 @@ button {
   font-weight: 700;
   font-size: 44px;
   line-height: 130%;
+  transform: scale(0);
+  transition: 1s;
 }
 .page-main__topSection-text {
   max-width: 469px;
@@ -710,6 +712,8 @@ button {
   text-align: center;
   color: #051101;
   opacity: 0.7;
+  transform: scale(0);
+  transition: 1s;
 }
 .page-main__topSection-card__wrapper {
   display: flex;
@@ -997,6 +1001,7 @@ button {
   gap: 30px;
   background: #ebffe4;
   margin-top: 105px;
+  overflow: hidden;
 }
 @media only screen and (max-width: 400px) {
   .page-main__getStarted-wrapper {
@@ -1009,6 +1014,7 @@ button {
   font-size: 44px;
   line-height: 130%;
   font-family: "Raleway-Bold";
+  transform: translateY(-200px);
 }
 @media only screen and (max-width: 400px) {
   .page-main__getstarted-wrapper__title {
@@ -1025,6 +1031,7 @@ button {
   max-width: 392px;
   width: 100%;
   text-align: center;
+  transform: scale(0);
 }
 .page-main__getStarted-wrapper__btn {
   padding: 15px 30px;
@@ -1037,6 +1044,7 @@ button {
   border-radius: 4px;
   border: 2px solid transparent;
   transition: 0.5s;
+  transform: translatey(150px);
 }
 .page-main__getStarted-wrapper__btn:hover {
   background-color: transparent;
@@ -1049,7 +1057,7 @@ button {
 }
 
 .getStarted-item {
-  transition: 1s;
+  transition: 0.4s;
 }
 
 .page-footer {
@@ -1174,7 +1182,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #3d3d3d;
+  background: #3d3d3d;
   position: fixed;
   top: 0;
   left: 0;

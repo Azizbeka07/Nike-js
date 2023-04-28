@@ -7,6 +7,11 @@ const modalWindow = document.querySelector(".modal-window");
 const shpoNow = document.querySelector(".button-2");
 const modalClose = document.querySelector(".modal-window__close-btn");
 const body = document.querySelector("body");
+const startTitle = document.querySelector(".page-main__getstarted-wrapper__title");
+const startText = document.querySelector(".page-main__getStarted-wrapper__text");
+const startBtn = document.querySelector(".page-main__getStarted-wrapper__btn");
+const mainTop = document.querySelector(".page-main__topSection-title");
+const mainText = document.querySelector(".page-main__topSection-text");
 
 menu.addEventListener("click", () => {
   mobileMenu.classList.add("open");
@@ -97,6 +102,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", () => {
     if(window.scrollY > content.offsetTop - content.clientHeight) {
+      mainTop.style=`transform:scale(1)`
+      mainText.style=`transform:scale(1)`
       contentItem.forEach((item) => {
         item.style = `transform: translateX(0)`
         item.style = `transform: translateY(0)`
@@ -131,6 +138,20 @@ window.addEventListener("DOMContentLoaded", () => {
       theBestItem.forEach((item) => {
         item.style = `transform: translateX(0)`
       })
+    }
+  })
+})
+
+// GETSTARTED ANIMATION
+
+window.addEventListener("DOMContentLoaded", () => {
+  const getStarted = document.querySelector(".getStarted");
+
+  window.addEventListener("scroll", () => {
+    if(window.scrollY > getStarted.offsetTop - startTitle.clientHeight / 4) {
+      startTitle.style=`transform:translateY(0);`
+      startText.style=`transform:scale(1)`
+      startBtn.style=`transform:translate(0)`
     }
   })
 })
