@@ -140,7 +140,7 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 0 15px 15px 0;
   transform: translateX(-300px);
   transition: 0.5s;
@@ -235,7 +235,7 @@ button {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-  color: #ffffff;
+  color: #fff;
   font-family: "Raleway-Regular";
   font-size: 20px;
   text-align: left;
@@ -259,7 +259,7 @@ button {
   }
 }
 .modal-window__text {
-  color: #ffffff;
+  color: #fff;
   font-family: "Raleway-Regular";
 }
 .modal-window .hidden {
@@ -268,7 +268,7 @@ button {
 .modal-window__btn {
   width: 100px;
   height: 40px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 10px;
   color: #5CBE3A;
   display: flex;
@@ -289,9 +289,9 @@ button {
 @media only screen and (max-width: 500px) {
   .modal-window__item {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 .modal-window__btn-google {
@@ -388,11 +388,11 @@ button {
   max-width: 425.48px;
   width: 100%;
   font-family: "Raleway-Regular";
+  color: #051101;
+  opacity: 0.7;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #051101;
-  opacity: 0.7;
 }
 .header-banner__left-top__span {
   color: #5CBE3A;
@@ -401,11 +401,11 @@ button {
   max-width: 350px;
   width: 100%;
   font-family: "Raleway-Regular";
+  color: #051101;
+  opacity: 0.7;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #051101;
-  opacity: 0.7;
 }
 @media only screen and (max-width: 1160px) {
   .header-banner__left-text {
@@ -490,12 +490,11 @@ button {
 }
 .header-banner__left-customer__text {
   font-family: "Raleway-Regular";
-  font-weight: 500;
-  font-size: 16px;
-  font-family: "Raleway-Regular";
-  line-height: 150%;
   color: #051101;
   opacity: 0.7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
 }
 .header-banner__left-customer__span-box {
   display: flex;
@@ -532,7 +531,7 @@ button {
   font-size: 37px;
   line-height: 150%;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   width: 79px;
 }
 .header-banner__right-img {
@@ -706,12 +705,10 @@ button {
   max-width: 469px;
   width: 100%;
   font-family: "Raleway-Regular";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  color: #051101;
-  opacity: 0.7;
   transform: scale(0);
   transition: 1s;
 }
@@ -1036,7 +1033,7 @@ button {
 .page-main__getStarted-wrapper__btn {
   padding: 15px 30px;
   background-color: #5CBE3A;
-  color: #ffffff;
+  color: #fff;
   font-family: "Raleway-Regular";
   font-size: 16px;
   line-height: 19px;

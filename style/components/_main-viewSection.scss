@@ -2,8 +2,7 @@
   // main topSection style
 
   &__viewSection__wrapper {
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
 
     @include mediaMobileFirst(1010) {
       display: flex;

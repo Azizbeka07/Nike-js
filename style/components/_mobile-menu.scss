@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: $color;
   border-radius: 0 15px 15px 0;
   transform: translateX(-300px);
   transition: 0.5s;
@@ -25,7 +25,7 @@
   .mobile-menu__close-btn {
     width: 20px;
     height: 20px;
-    background-color: #fff;
+    background-color: $color;
   }
 
   &__nav {
@@ -37,7 +37,7 @@
   }
 
   &__link {
-    color: #051101;
+    color: $titleColor;
     opacity: 0.6;
     font-family: "Raleway-Regular";
   }

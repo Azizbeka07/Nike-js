@@ -60,14 +60,10 @@
 .button-2 {
   border-radius: 4px;
   @include flexCenter;
-  color: #fff;
+  color: $color;
    font-family: "Raleway-Regular";
   border: 3px solid $btnColor;
-  background-image: -webkit-linear-gradient(
-    30deg,
-    $btnColor 50%,
-    transparent 50%
-  );
+  background-image: -webkit-linear-gradient(30deg, $btnColor 50%, transparent 50% );
   background-image: linear-gradient(30deg, $btnColor 50%, transparent 50%);
   background-size: 500px;
   background-repeat: no-repeat;

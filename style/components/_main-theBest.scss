@@ -17,8 +17,7 @@
   }
 
   &__theBest-wrapper {
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
     column-gap: 80px;
 
     @include mediaMobileFirst(1110) {

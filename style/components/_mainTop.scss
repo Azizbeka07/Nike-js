@@ -72,12 +72,8 @@
     max-width: 469px;
     width: 100%;
     font-family: "Raleway-Regular";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
+    @include flexCenter;
     text-align: center;
-    color: #051101;
-    opacity: 0.7;
     transform: scale(0);
     transition: 1s;
   }

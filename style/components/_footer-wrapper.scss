@@ -41,7 +41,7 @@
     font-weight: 500;
     font-size: 22px;
     line-height: 140%;
-    color: #051101;
+    color: $titleColor;
 
     @include mediaMobileFirst(930) {
       font-size: 17px;
@@ -94,7 +94,7 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 140%;
-    color: #051101;
+    color:$titleColor;
 
     @include mediaMobileFirst(730) {
       font-size: 17px;

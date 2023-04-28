@@ -1,4 +1,6 @@
 .page-main {
+
+  
   &__getStarted-wrapper {
     width: 100%;
     padding: 84px 15px;
@@ -36,7 +38,7 @@
   &__getStarted-wrapper__btn {
     padding: 15px 30px;
     background-color: $btnColor;
-    color: #ffffff;
+    color: $color;
     font-family: "Raleway-Regular";
     font-size: 16px;
     line-height: 19px;
