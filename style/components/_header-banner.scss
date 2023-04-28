@@ -107,8 +107,7 @@
     font-size: 31px;
     line-height: 130%;
     color: $btnColor;
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
     gap: 30px;
     margin-top: 14px;
 
@@ -125,8 +124,7 @@
   }
 
   &__left-btn__group {
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
     gap: 30px;
     margin-top: 37px;
 
@@ -175,8 +173,7 @@
   }
 
   &__left-customer__span-box {
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
   }
 
   &__left-cutomer__span {
@@ -227,9 +224,7 @@
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
   }
 
   .swiper-slide img {

@@ -546,8 +546,8 @@ button {
   text-align: center;
   font-size: 18px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .header-banner .swiper-slide img {
   display: block;
@@ -1064,8 +1064,8 @@ button {
 }
 .page-footer__wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin-block: 44px;
 }
 @media only screen and (max-width: 576px) {

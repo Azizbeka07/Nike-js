@@ -4,9 +4,8 @@
   border-bottom: 34px solid $btnColor;
 
   &__wrapper {
-    display: flex;
+    @include flexAlignCenter;
     justify-content: space-between;
-    align-items: center;
     margin-block: 44px;
 
     @include mediaMobileFirst(576) {

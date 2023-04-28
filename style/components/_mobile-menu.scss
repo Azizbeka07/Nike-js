@@ -17,8 +17,7 @@
 
   &__header {
     padding: 15px 20px;
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
     justify-content: space-between;
   }
 
