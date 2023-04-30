@@ -121,18 +121,6 @@ button {
   background-color: transparent;
 }
 
-.header {
-  overflow: hidden;
-}
-
-.header-item {
-  transition: 1s;
-}
-
-.header-item:nth-child(1) {
-  transform: translateY(-200px);
-}
-
 .mobile-menu {
   max-width: 300px;
   width: 100%;
@@ -374,12 +362,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-.header-banner .wrapper-item:nth-child(1) {
-  transform: translateX(-900px);
-}
-.header-banner .wrapper-item:nth-child(2) {
-  transform: translateX(900px);
 }
 .header-banner .wrapper-item {
   transition: 1s;
@@ -630,10 +612,6 @@ button {
 .fourth:hover {
   color: #fff;
   background-position: 0;
-}
-
-.wrapper {
-  overflow: hidden;
 }
 
 .page-main__topSection {

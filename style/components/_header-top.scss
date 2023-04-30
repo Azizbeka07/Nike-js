@@ -80,15 +80,3 @@
   color: $btnColor;
   background-color: transparent;
 }
-
-.header {
-  overflow: hidden;
-}
-
-.header-item {
-  transition: 1s;
-}
-
-.header-item:nth-child(1) {
-  transform: translateY(-200px);
-}

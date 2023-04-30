@@ -58,13 +58,6 @@
     gap: 10px;
   }
 
-  .wrapper-item:nth-child(1) {
-    transform: translateX(-900px);
-  }
-
-  .wrapper-item:nth-child(2) {
-    transform: translateX(900px);
-  }
 
   .wrapper-item {
     transition: 1s;
@@ -320,9 +313,4 @@
 .fourth:hover {
   color: $color;
   background-position: 0;
-}
-
-
-.wrapper {
-  overflow: hidden;
 }

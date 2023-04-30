@@ -91,15 +91,13 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // HEADER TOP ANIMATION
-
-  headerItem.forEach((item) => {
-    item.style = `transform: translateY(0)`;
-  });
+  // HEADER ANIMATION
 
   wrapperItem.forEach((item) => {
     item.style = `transform: translateX(0)`;
   });
+
+// MAINTOP SECTION
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > content.offsetTop - content.clientHeight) {
@@ -112,6 +110,8 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+// VIEWSECTION
+
   window.addEventListener("scroll", () => {
     if (window.scrollY > viewSection.offsetTop - viewSection.clientHeight) {
       viewSectionItem.forEach((item) => {
@@ -121,6 +121,8 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+// THEBEST SECTION
+
   window.addEventListener("scroll", () => {
     if (window.scrollY > theBest.offsetTop - theBest.clientHeight) {
       theBestItem.forEach((item) => {
@@ -129,6 +131,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+// GET STARTED SECTION
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > getStarted.offsetTop - startTitle.clientHeight / 4) {
@@ -137,6 +140,8 @@ window.addEventListener("DOMContentLoaded", () => {
       startBtn.style = `transform:translate(0)`;
     }
   });
+
+  // LOADER
 
   setTimeout(() => {
     loader.style.opacity = "0";
