@@ -41,6 +41,8 @@
     font-size: 22px;
     line-height: 140%;
     color: $titleColor;
+    border-bottom: 2px solid transparent;
+    transition: .5s;
 
     @include mediaMobileFirst(930) {
       font-size: 17px;
@@ -49,6 +51,10 @@
     @include mediaMobileFirst(640) {
         font-size: 13px;
     }
+  }
+
+  &__wrapper-navbar__link:hover {
+    border-bottom: 2px solid #000;
   }
 
   &__wrapper-followUs {

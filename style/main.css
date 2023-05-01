@@ -1082,6 +1082,8 @@ button {
   font-size: 22px;
   line-height: 140%;
   color: #051101;
+  border-bottom: 2px solid transparent;
+  transition: 0.5s;
 }
 @media only screen and (max-width: 930px) {
   .page-footer__wrapper-navbar__link {
@@ -1092,6 +1094,9 @@ button {
   .page-footer__wrapper-navbar__link {
     font-size: 13px;
   }
+}
+.page-footer__wrapper-navbar__link:hover {
+  border-bottom: 2px solid #000;
 }
 .page-footer__wrapper-followUs {
   display: flex;
