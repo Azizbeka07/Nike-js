@@ -149,4 +149,4 @@ window.addEventListener("DOMContentLoaded", () => {
 //       loader.style.display = "none";
 //     }, 500);
 //   }, 2000);
-// });
+});
