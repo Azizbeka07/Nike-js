@@ -147,7 +147,6 @@ window.addEventListener("DOMContentLoaded", () => {
     loader.style.opacity = "0";
     setTimeout(() => {
       loader.style.display = "none";
-      body.style = "overflowY = hidden";
-    }, 500);
+    }, 50);
   }, 2000);
 });
