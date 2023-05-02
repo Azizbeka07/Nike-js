@@ -141,7 +141,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  LOADER
+ // LOADER
 
   setTimeout(() => {
     loader.style.opacity = "0";
